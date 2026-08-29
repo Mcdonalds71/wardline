@@ -20,17 +20,16 @@
       Wardline
     </a>
     <nav class="nav__links" id="navLinks">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#ai">AI Technology</a>
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
-      <a href="#roadmap">Roadmap</a>
+      <a href="#capabilities"><span class="nav__n">01</span>Scan</a>
+      <a href="#ai"><span class="nav__n">02</span>Security</a>
+      <a href="#how"><span class="nav__n">03</span>Process</a>
+      <a href="#roadmap"><span class="nav__n">04</span>Roadmap</a>
       <a href="login.html" class="btn btn--line nav__m-only nav__m-login">Log in</a>
-      <a href="#demo" class="btn btn--dark nav__m-only nav__m-demo">Get started</a>
+      <a href="#demo" class="btn btn--dark nav__m-only nav__m-demo">Start scanning</a>
     </nav>
     <div class="nav__cta">
       <a href="login.html" class="nav__login">Log in</a>
-      <a href="#demo" class="btn btn--dark">Get started</a>
+      <a href="#demo" class="btn btn--dark">Start scanning</a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -103,10 +102,10 @@
             <div class="mk__score-detail">Risk Score<br><small>Improving ↑</small></div>
           </div>
           <div class="mk__dist">
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--crit">CRIT</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--crit" style="width:15%"></div></div><span>2</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--high">HIGH</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--high" style="width:30%"></div></div><span>4</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--med">MED</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--med" style="width:55%"></div></div><span>8</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--low">LOW</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--low" style="width:80%"></div></div><span>12</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--crit">CRIT</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--crit" data-w="15%"></div></div><span>2</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--high">HIGH</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--high" data-w="30%"></div></div><span>4</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--med">MED</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--med" data-w="55%"></div></div><span>8</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--low">LOW</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--low" data-w="80%"></div></div><span>12</span></div>
           </div>
         </div>
         <h3>Risk posture at a glance</h3>
@@ -337,7 +336,7 @@
     </div>
     <div class="team-row">
       <div class="member reveal" data-d="1">
-        <div class="member__ph">CN</div>
+        <div class="member__ph"><img src="assets/team/ceo.jpg" alt="Chiamaka Nnadi"></div>
         <h3>Chiamaka Nnadi</h3>
         <div class="role">Founder &amp; CEO</div>
         <p>Leads Wardline's mission to make continuous security scanning accessible to teams without a security function.</p>
@@ -348,7 +347,7 @@
         </div>
       </div>
       <div class="member reveal" data-d="2">
-        <div class="member__ph">OE</div>
+        <div class="member__ph"><img src="assets/team/cto.jpg" alt="Obinna Eze"></div>
         <h3>Obinna Eze</h3>
         <div class="role">Co-founder &amp; CTO</div>
         <p>Leads Wardline's detection models, exploit-modeling pipeline, and cloud infrastructure.</p>

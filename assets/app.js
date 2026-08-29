@@ -45,7 +45,16 @@
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+          var fills = entry.target.querySelectorAll(".mk__bar-fill[data-w]");
+          if (fills.length) {
+            fills.forEach(function (fill, i) {
+              setTimeout(function () { fill.style.width = fill.dataset.w; }, 300 + i * 160);
+            });
+          }
+        }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
     revealEls.forEach(function (el) { io.observe(el); });

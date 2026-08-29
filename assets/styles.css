@@ -362,3 +362,57 @@ body:not(.js) .reveal { opacity: 1; transform: none; }
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column-reverse; align-items: flex-start; gap: 14px; }
 }
+
+/* ---- Nav numbered items ---- */
+.nav__n {
+  font-family: var(--font-mono); font-size: .66rem;
+  color: var(--ink-300); margin-right: 5px; font-weight: 400;
+}
+.nav__links a:hover .nav__n { color: var(--ink-400); }
+
+/* ---- Mockup card scroll animations ---- */
+.js .mk__row { opacity: 0; transform: translateX(-8px); }
+.js .cap-card.in .mk__row {
+  animation: mkRowIn .38s cubic-bezier(.4,0,.2,1) both;
+}
+.js .cap-card.in .mk__row:nth-child(1) { animation-delay: .06s; }
+.js .cap-card.in .mk__row:nth-child(2) { animation-delay: .14s; }
+.js .cap-card.in .mk__row:nth-child(3) { animation-delay: .22s; }
+.js .cap-card.in .mk__row:nth-child(4) { animation-delay: .30s; }
+.js .cap-card.in .mk__row:nth-child(5) { animation-delay: .38s; }
+@keyframes mkRowIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Risk bars: start at 0, JS sets target width on scroll */
+.mk__bar-fill { transition: width .9s cubic-bezier(.4,0,.2,1); }
+.js .mk__bar-fill { width: 0; }
+
+.js .mk__step { opacity: 0; transform: translateY(5px); }
+.js .cap-card.in .mk__step { animation: mkStepIn .32s ease both; }
+.js .cap-card.in .mk__step:nth-child(1) { animation-delay: .20s; }
+.js .cap-card.in .mk__step:nth-child(2) { animation-delay: .32s; }
+.js .cap-card.in .mk__step:nth-child(3) { animation-delay: .44s; }
+@keyframes mkStepIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.js .mk__fix-title, .js .mk__fix-meta { opacity: 0; }
+.js .cap-card.in .mk__fix-title { animation: mkFadeIn .3s ease both .05s; }
+.js .cap-card.in .mk__fix-meta  { animation: mkFadeIn .3s ease both .12s; }
+.js .mk__fix-action { opacity: 0; }
+.js .cap-card.in .mk__fix-action { animation: mkFadeIn .3s ease both .56s; }
+@keyframes mkFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .mk__row, .js .mk__step,
+  .js .mk__fix-title, .js .mk__fix-meta, .js .mk__fix-action {
+    opacity: 1; transform: none; animation: none;
+  }
+  .js .mk__bar-fill { transition: none; }
+}
