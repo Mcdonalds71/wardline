@@ -39,7 +39,7 @@
     });
   }
 
-  var revealSel = ".reveal, .section h2, .step-card2, .spec-vrow2, .feat-card3, .term-card, .infra-row3, .stat-cell2, .kanban-card, .member-card2, .vuln-card";
+  var revealSel = ".reveal, .cap-card, .problem-card, .feat-card, .step-node, .spec-row, .infra-trow, .stat-block, .tl-row, .member, .soln-mock";
   var revealEls = document.querySelectorAll(revealSel);
   revealEls.forEach(function (el) { el.classList.add("reveal"); });
   if ("IntersectionObserver" in window) {
@@ -87,7 +87,7 @@
       var required = form.querySelectorAll("[required]"), ok = true;
       required.forEach(function (input) {
         if (!input.value.trim() || (input.type === "email" && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(input.value))) {
-          ok = false; input.style.borderColor = "#E5484D";
+          ok = false; input.style.borderColor = "#DC2626";
         } else { input.style.borderColor = ""; }
       });
       if (ok) form.classList.add("sent");
@@ -104,7 +104,7 @@
       if (/\d/.test(v)) score++;
       if (/[^A-Za-z0-9]/.test(v)) score++;
       meter.style.width = [0, 25, 55, 80, 100][score] + "%";
-      meter.style.background = ["", "#E5484D", "#FACC15", "#FACC15", "#4ADE80"][score];
+      meter.style.background = ["", "#DC2626", "#CA8A04", "#CA8A04", "#16A34A"][score];
     });
   }
 

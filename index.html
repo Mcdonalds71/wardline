@@ -7,8 +7,8 @@
 <meta name="description" content="Wardline uses AI to continuously scan your systems for vulnerabilities and gives plain-language, prioritized fixes — security built for teams without a dedicated security team." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/styles.css?v=4" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css?v=5" />
 <link rel="icon" type="image/png" href="assets/logo-mark.png?v=1">
 </head>
 <body>
@@ -20,18 +20,17 @@
       Wardline
     </a>
     <nav class="nav__links" id="navLinks">
-      <a href="#problem">Problem</a>
+      <a href="#capabilities">Capabilities</a>
       <a href="#ai">AI Technology</a>
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
-      <a href="#market">Market</a>
       <a href="#roadmap">Roadmap</a>
       <a href="login.html" class="btn btn--line nav__m-only nav__m-login">Log in</a>
-      <a href="#demo" class="btn btn--red nav__m-only nav__m-demo">Get started</a>
+      <a href="#demo" class="btn btn--dark nav__m-only nav__m-demo">Get started</a>
     </nav>
     <div class="nav__cta">
       <a href="login.html" class="nav__login">Log in</a>
-      <a href="#demo" class="btn btn--red">Get started</a>
+      <a href="#demo" class="btn btn--dark">Get started</a>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -41,55 +40,121 @@
 <div class="nav__scrim" id="navScrim"></div>
 
 <section class="hero">
-  <div class="container hero__inner reveal">
-    <h1>Find the hole <span class="text-accent">before someone else does.</span></h1>
-    <p class="hero__sub">Wardline continuously scans your systems for vulnerabilities with AI and gives plain-language, prioritized fixes — security built for teams without a dedicated security team.</p>
-    <div class="hero__actions">
-      <a href="#demo" class="btn btn--red btn--lg">Get started
-        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a href="#how" class="btn btn--line btn--lg">See how it works</a>
-    </div>
-    <p class="hero__note">No credit card · Data-protection ready · Built for lean SMB teams</p>
-  </div>
-  <div class="reveal" data-d="2">
-    <div class="scan-window">
-      <div class="scan-window__head"><i></i><i></i><i></i><span>wardline scan — acme-corp.prod</span></div>
-      <div class="scan-line"><span class="scan-line__status" style="color:var(--red-500)">● LIVE</span><span class="scan-line__target">MVP — scanning accounts in real time</span></div>
-      <div class="scan-line"><span class="scan-line__status scan-line__status--ok">PASS</span><span class="scan-line__target">TLS configuration</span></div>
-      <div class="scan-line"><span class="scan-line__status scan-line__status--warn">WARN</span><span class="scan-line__target">Outdated dependency: express@4.16.1</span></div>
-      <div class="scan-line"><span class="scan-line__status scan-line__status--crit">CRIT</span><span class="scan-line__target">Open admin port exposed to public internet</span></div>
-      <div class="scan-line"><span class="scan-line__status scan-line__status--ok">PASS</span><span class="scan-line__target">Database access controls</span></div>
+  <div class="container hero__grid">
+    <div class="hero__dots" aria-hidden="true"></div>
+    <div class="hero__content reveal">
+      <h1>Find the hole <em>before someone else does.</em></h1>
+      <p class="hero__sub">Wardline continuously scans your systems for vulnerabilities with AI and gives plain-language, prioritized fixes — security built for teams without a dedicated security team.</p>
+      <div class="hero__actions">
+        <a href="#demo" class="btn btn--dark btn--lg">Get started
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#how" class="btn btn--line btn--lg">See how it works</a>
+      </div>
+      <p class="hero__note">No credit card · Data-protection ready · Built for lean SMB teams</p>
     </div>
   </div>
 </section>
 
 <div class="trust">
-  <p class="trust__label">Built for teams without a security team</p>
-  <div class="container trust__row">
+  <div class="trust__track">
     <span class="trust__item">B2B SaaS</span>
     <span class="trust__item">E-commerce</span>
     <span class="trust__item">Fintech startups</span>
     <span class="trust__item">Healthcare tech</span>
     <span class="trust__item">Agencies</span>
+    <span class="trust__item">Remote teams</span>
+    <span class="trust__item">B2B SaaS</span>
+    <span class="trust__item">E-commerce</span>
+    <span class="trust__item">Fintech startups</span>
+    <span class="trust__item">Healthcare tech</span>
+    <span class="trust__item">Agencies</span>
+    <span class="trust__item">Remote teams</span>
   </div>
 </div>
+
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">capabilities</span>
+      <h2 class="h2">What Wardline actually shows you</h2>
+      <p class="lead">Three views that make your security posture concrete and actionable.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-card reveal" data-d="1">
+        <div class="mk mk--scan">
+          <div class="mk__bar"><span>SCAN RESULTS</span><span class="mk__tag">acme-corp.prod</span></div>
+          <div class="mk__row"><span class="mk__sev mk__sev--crit">CRIT</span><span>Open admin port exposed to public internet</span></div>
+          <div class="mk__row"><span class="mk__sev mk__sev--high">HIGH</span><span>Outdated dependency: express@4.16.1</span></div>
+          <div class="mk__row"><span class="mk__sev mk__sev--med">MED</span><span>Weak TLS cipher suite on 3 endpoints</span></div>
+          <div class="mk__row"><span class="mk__sev mk__sev--low">LOW</span><span>Debug mode enabled in staging</span></div>
+          <div class="mk__row"><span class="mk__sev mk__sev--pass">PASS</span><span>Database access controls</span></div>
+          <div class="mk__foot">4 findings · 1 critical</div>
+        </div>
+        <h3>Live scan results</h3>
+        <p>Every finding listed with severity, affected system, and context — not just a CVE number.</p>
+      </div>
+
+      <div class="cap-card reveal" data-d="2">
+        <div class="mk mk--risk">
+          <div class="mk__bar"><span>RISK POSTURE</span><span class="mk__tag">last 30 days</span></div>
+          <div class="mk__score-row">
+            <div class="mk__score">B+</div>
+            <div class="mk__score-detail">Risk Score<br><small>Improving ↑</small></div>
+          </div>
+          <div class="mk__dist">
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--crit">CRIT</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--crit" style="width:15%"></div></div><span>2</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--high">HIGH</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--high" style="width:30%"></div></div><span>4</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--med">MED</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--med" style="width:55%"></div></div><span>8</span></div>
+            <div class="mk__dist-row"><span class="mk__sev mk__sev--low">LOW</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--low" style="width:80%"></div></div><span>12</span></div>
+          </div>
+        </div>
+        <h3>Risk posture at a glance</h3>
+        <p>A single score and severity breakdown that tells your team exactly where you stand.</p>
+      </div>
+
+      <div class="cap-card reveal" data-d="3">
+        <div class="mk mk--fix">
+          <div class="mk__bar"><span>FIX GUIDANCE</span><span class="mk__tag mk__tag--crit">CRITICAL</span></div>
+          <div class="mk__fix-title">Open admin port exposed to public internet</div>
+          <div class="mk__fix-meta">Port 8080 · 3 affected hosts · CVE-2024-1234</div>
+          <div class="mk__steps">
+            <div class="mk__step"><span class="mk__step-n">1</span>Add IP allowlist to admin endpoint</div>
+            <div class="mk__step"><span class="mk__step-n">2</span>Enable MFA on admin login</div>
+            <div class="mk__step"><span class="mk__step-n">3</span>Deploy WAF rule to block public access</div>
+          </div>
+          <div class="mk__fix-action">Apply fix →</div>
+        </div>
+        <h3>Plain-language fixes</h3>
+        <p>Every finding comes with step-by-step remediation your team can follow — no security degree required.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="problem">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">The problem</span>
-      <h2 class="h2">Most breaches start with a <span class="text-accent">vulnerability nobody knew about.</span></h2>
+      <span class="eyebrow">the_problem</span>
+      <h2 class="h2">Most breaches start with a vulnerability nobody knew about.</h2>
       <p class="lead" style="margin-inline:auto">Small teams don't have a dedicated security function, so scans happen rarely, if at all — until something goes wrong.</p>
     </div>
-    <div class="vuln-wrap reveal" data-d="2">
-      <div class="vuln-card vuln-card--1"><span class="vuln-card__tag">MEDIUM</span><h3>Outdated TLS cipher suite</h3><p>Detected on 3 public-facing endpoints.</p></div>
-      <div class="vuln-card vuln-card--2"><span class="vuln-card__tag">HIGH</span><h3>Exposed admin login page</h3><p>No IP allowlist configured.</p></div>
-      <div class="vuln-card vuln-card--3"><span class="vuln-card__tag">CRITICAL</span><h3>Unpatched dependency (CVE-2024-1234)</h3><p>Remote code execution risk — patch available.</p></div>
-    </div>
-    <div class="stat-chip-row">
-      <div class="stat-chip"><b>60%</b><span>of SMB breaches trace back to a known, unpatched flaw</span></div>
-      <div class="stat-chip"><b>206 days</b><span>average time to detect a breach</span></div>
+    <div class="problem-grid">
+      <div class="problem-card reveal" data-d="1">
+        <div class="problem-card__ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v5M12 16h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>No continuous visibility</h3>
+        <p>Scans happen quarterly at best. New vulnerabilities appear daily.</p>
+      </div>
+      <div class="problem-card reveal" data-d="2">
+        <div class="problem-card__ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 9v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <h3>206-day detection average</h3>
+        <p>Breaches sit undetected for months because nobody is watching.</p>
+      </div>
+      <div class="problem-card reveal" data-d="3">
+        <div class="problem-card__ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>No prioritization</h3>
+        <p>When findings do arrive, everything looks equally urgent.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -97,45 +162,73 @@
 <section class="section" id="solution">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">The solution</span>
-      <h2 class="h2">One system to <span class="text-accent">scan, prioritize, and fix</span> — continuously.</h2>
+      <span class="eyebrow">the_solution</span>
+      <h2 class="h2">One system to scan, prioritize, and fix — continuously.</h2>
       <p class="lead" style="margin-inline:auto">Wardline runs in the background and tells you exactly what to fix first, in language your whole team understands.</p>
     </div>
-    <div class="steps-row2">
-      <div class="step-card2 reveal" data-d="1"><div class="step-card2__n">01</div><h3>Scan continuously</h3><p>Your infrastructure and dependencies scanned around the clock, not once a quarter.</p></div>
-      <div class="step-card2 reveal" data-d="2"><div class="step-card2__n">02</div><h3>Prioritize by real risk</h3><p>Findings ranked by exploitability and exposure, not just severity score.</p></div>
-      <div class="step-card2 reveal" data-d="3"><div class="step-card2__n">03</div><h3>Fix with confidence</h3><p>A plain-language fix for every finding, ready for your team to apply.</p></div>
+    <div class="soln-mock reveal" data-d="2">
+      <div class="soln-mock__chrome"><i></i><i></i><i></i><span>app.wardline.io/dashboard</span></div>
+      <div class="soln-mock__body">
+        <div class="soln-mock__sidebar">
+          <div class="soln-mock__nav-item soln-mock__nav-item--active">Dashboard</div>
+          <div class="soln-mock__nav-item">Scan results</div>
+          <div class="soln-mock__nav-item">Fix guidance</div>
+          <div class="soln-mock__nav-item">Reports</div>
+          <div class="soln-mock__nav-item">Settings</div>
+        </div>
+        <div class="soln-mock__main">
+          <div class="soln-mock__topbar"><span>Dashboard</span><span class="soln-mock__status">Scanning</span></div>
+          <div class="soln-mock__kpis">
+            <div class="soln-mock__kpi"><div class="soln-mock__kpi-n">26</div><div class="soln-mock__kpi-l">Total findings</div></div>
+            <div class="soln-mock__kpi"><div class="soln-mock__kpi-n">2</div><div class="soln-mock__kpi-l">Critical</div></div>
+            <div class="soln-mock__kpi"><div class="soln-mock__kpi-n">B+</div><div class="soln-mock__kpi-l">Risk score</div></div>
+            <div class="soln-mock__kpi"><div class="soln-mock__kpi-n">91%</div><div class="soln-mock__kpi-l">Accuracy</div></div>
+          </div>
+          <table class="soln-mock__table">
+            <tr><th>Finding</th><th>Severity</th><th>System</th><th>Status</th></tr>
+            <tr><td>Open admin port</td><td><span class="soln-sev soln-sev--crit">CRIT</span></td><td>api-gateway</td><td>Open</td></tr>
+            <tr><td>Outdated express</td><td><span class="soln-sev soln-sev--high">HIGH</span></td><td>web-server</td><td>Fix ready</td></tr>
+            <tr><td>Weak TLS cipher</td><td><span class="soln-sev soln-sev--med">MED</span></td><td>cdn-edge</td><td>Open</td></tr>
+            <tr><td>Debug mode on</td><td><span class="soln-sev soln-sev--low">LOW</span></td><td>staging</td><td>Ignored</td></tr>
+          </table>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="container stats-band__inner">
+    <div class="stat-block reveal" data-d="1"><div class="stat-block__num"><span class="count" data-to="14">0</span></div><div class="stat-block__label">organizations scanning</div></div>
+    <div class="stat-block reveal" data-d="2"><div class="stat-block__num"><span class="count" data-to="890">0</span>+</div><div class="stat-block__label">vulnerabilities found</div></div>
+    <div class="stat-block reveal" data-d="3"><div class="stat-block__num"><span class="count" data-to="91">0</span>%</div><div class="stat-block__label">detection accuracy</div></div>
+    <div class="stat-block reveal" data-d="4"><div class="stat-block__num">Live</div><div class="stat-block__label">product in active use</div></div>
   </div>
 </section>
 
 <section class="section" id="ai">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">AI Technology</span>
-      <h2 class="h2">Detection is the engine, not a <span class="text-accent">checklist.</span></h2>
+      <span class="eyebrow">ai_technology</span>
+      <h2 class="h2">Detection is the engine, not a checklist.</h2>
       <p class="lead">Wardline is built around a purpose-trained vulnerability-detection system for modern infrastructure.</p>
     </div>
-    <div class="spec-vlist2">
-      <div class="spec-vrow2 reveal" data-d="1">
-        <div class="spec-vrow2__k">Data in</div>
-        <div><h3>Every surface you expose</h3><p>Open ports, dependencies, configurations, and public-facing endpoints.</p>
-        <div class="tag-row"><span class="tag">Dependencies</span><span class="tag">Configs</span></div></div>
+    <div class="spec-list">
+      <div class="spec-row reveal" data-d="1">
+        <div class="spec-row__k">data_in</div>
+        <div><h3>Every surface you expose</h3><p>Open ports, dependencies, configurations, and public-facing endpoints.</p></div>
       </div>
-      <div class="spec-vrow2 reveal" data-d="2">
-        <div class="spec-vrow2__k">Data out</div>
-        <div><h3>Findings, priority, and a fix</h3><p>A ranked list of findings, exploitability context, and a step-by-step remediation.</p>
-        <div class="tag-row"><span class="tag">Risk ranking</span><span class="tag">Fix guidance</span></div></div>
+      <div class="spec-row reveal" data-d="2">
+        <div class="spec-row__k">data_out</div>
+        <div><h3>Findings, priority, and a fix</h3><p>A ranked list of findings, exploitability context, and a step-by-step remediation.</p></div>
       </div>
-      <div class="spec-vrow2 reveal" data-d="3">
-        <div class="spec-vrow2__k">Techniques</div>
-        <div><h3>CVE matching &amp; exploit modeling</h3><p>Continuous CVE database matching combined with real-world exploitability modeling.</p>
-        <div class="tag-row"><span class="tag">CVE matching</span><span class="tag">Exploit modeling</span></div></div>
+      <div class="spec-row reveal" data-d="3">
+        <div class="spec-row__k">techniques</div>
+        <div><h3>CVE matching &amp; exploit modeling</h3><p>Continuous CVE database matching combined with real-world exploitability modeling.</p></div>
       </div>
-      <div class="spec-vrow2 reveal" data-d="4">
-        <div class="spec-vrow2__k">Why scale matters</div>
-        <div><h3>Scanning that never sleeps</h3><p>New CVEs publish daily. GPU-accelerated scanning re-checks your surface continuously.</p>
-        <div class="tag-row"><span class="tag">GPU inference</span></div></div>
+      <div class="spec-row reveal" data-d="4">
+        <div class="spec-row__k">why_scale</div>
+        <div><h3>Scanning that never sleeps</h3><p>New CVEs publish daily. GPU-accelerated scanning re-checks your surface continuously.</p></div>
       </div>
     </div>
   </div>
@@ -144,16 +237,16 @@
 <section class="section" id="features">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">Product features</span>
+      <span class="eyebrow">product_features</span>
       <h2 class="h2">Everything a lean team needs to stay ahead of risk</h2>
     </div>
-    <div class="feat-grid3b">
-      <div class="feat-card3 reveal" data-d="1"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Continuous Scanning</h3><p>Your systems checked around the clock, not on a schedule.</p></div>
-      <div class="feat-card3 reveal" data-d="2"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 9v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Risk Prioritization</h3><p>Findings ranked by real-world exploitability.</p></div>
-      <div class="feat-card3 reveal" data-d="3"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Plain-Language Fixes</h3><p>Remediation steps anyone on your team can follow.</p></div>
-      <div class="feat-card3 reveal" data-d="1"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M4 19l5-6 4 3 7-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Trend Reporting</h3><p>Track your risk posture improving over time.</p></div>
-      <div class="feat-card3 reveal" data-d="2"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><rect x="4" y="5" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Compliance Reports</h3><p>Exportable reports ready for SOC 2 and audits.</p></div>
-      <div class="feat-card3 reveal" data-d="3"><div class="feat-card3__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><h3>Team Alerts</h3><p>Critical findings routed to the right person instantly.</p></div>
+    <div class="feat-grid">
+      <div class="feat-card reveal" data-d="1"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Continuous Scanning</h3><p>Your systems checked around the clock, not on a schedule.</p></div>
+      <div class="feat-card reveal" data-d="2"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 9v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Risk Prioritization</h3><p>Findings ranked by real-world exploitability.</p></div>
+      <div class="feat-card reveal" data-d="3"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Plain-Language Fixes</h3><p>Remediation steps anyone on your team can follow.</p></div>
+      <div class="feat-card reveal" data-d="1"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M4 19l5-6 4 3 7-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Trend Reporting</h3><p>Track your risk posture improving over time.</p></div>
+      <div class="feat-card reveal" data-d="2"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><rect x="4" y="5" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Compliance Reports</h3><p>Exportable reports ready for SOC 2 and audits.</p></div>
+      <div class="feat-card reveal" data-d="3"><div class="feat-card__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><h3>Team Alerts</h3><p>Critical findings routed to the right person instantly.</p></div>
     </div>
   </div>
 </section>
@@ -161,14 +254,30 @@
 <section class="section" id="how">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">How it works</span>
+      <span class="eyebrow">how_it_works</span>
       <h2 class="h2">From exposed surface to fixed in four steps</h2>
     </div>
-    <div class="term-row">
-      <div class="term-card reveal" data-d="1"><div class="term-card__bar">$ connect --source</div><div class="term-card__body"><h3>Connect your stack</h3><p>Link your infrastructure and repos in minutes.</p></div></div>
-      <div class="term-card reveal" data-d="2"><div class="term-card__bar">$ run --scan</div><div class="term-card__body"><h3>AI scans continuously</h3><p>Vulnerabilities detected as they appear.</p></div></div>
-      <div class="term-card reveal" data-d="3"><div class="term-card__bar">$ review --findings</div><div class="term-card__body"><h3>Your team reviews</h3><p>Ranked findings, with the risk explained.</p></div></div>
-      <div class="term-card reveal" data-d="4"><div class="term-card__bar">$ apply --fix</div><div class="term-card__body"><h3>Fixes get applied</h3><p>Step-by-step remediation, tracked to closure.</p></div></div>
+    <div class="steps-flow">
+      <div class="step-node reveal" data-d="1">
+        <div class="step-node__n">01</div>
+        <h3>Connect your stack</h3>
+        <p>Link your infrastructure and repos in minutes.</p>
+      </div>
+      <div class="step-node reveal" data-d="2">
+        <div class="step-node__n">02</div>
+        <h3>AI scans continuously</h3>
+        <p>Vulnerabilities detected as they appear.</p>
+      </div>
+      <div class="step-node reveal" data-d="3">
+        <div class="step-node__n">03</div>
+        <h3>Your team reviews</h3>
+        <p>Ranked findings, with the risk explained.</p>
+      </div>
+      <div class="step-node reveal" data-d="4">
+        <div class="step-node__n">04</div>
+        <h3>Fixes get applied</h3>
+        <p>Step-by-step remediation, tracked to closure.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -176,72 +285,45 @@
 <section class="section" id="tech">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Technology &amp; Infrastructure</span>
-      <h2 class="h2">A modern, secure <span class="text-accent">tech stack</span> built to scan at scale</h2>
+      <span class="eyebrow">technology_and_infrastructure</span>
+      <h2 class="h2">A modern, secure tech stack built to scan at scale</h2>
       <p class="lead">Wardline runs on cloud infrastructure for secure storage, API hosting, and AI inference — with GPU-accelerated compute powering continuous scanning.</p>
     </div>
-    <div class="infra-rows2">
-      <div class="infra-row3 reveal" data-d="1"><b>Cloud infrastructure</b><p>Secure, scalable storage keeps every customer's scan data isolated and encrypted.</p></div>
-      <div class="infra-row3 reveal" data-d="2"><b>GPU-accelerated AI</b><p>Accelerated compute powers continuous scanning and exploit modeling.</p></div>
-      <div class="infra-row3 reveal" data-d="3"><b>Security &amp; compliance</b><p>Encryption in transit and at rest, with role-based access to scan results.</p></div>
+    <div class="infra-table">
+      <div class="infra-trow reveal" data-d="1"><b>Cloud infrastructure</b><p>Secure, scalable storage keeps every customer's scan data isolated and encrypted.</p></div>
+      <div class="infra-trow reveal" data-d="2"><b>GPU-accelerated AI</b><p>Accelerated compute powers continuous scanning and exploit modeling.</p></div>
+      <div class="infra-trow reveal" data-d="3"><b>Security &amp; compliance</b><p>Encryption in transit and at rest, with role-based access to scan results.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section" id="market">
-  <div class="container market-split3">
+  <div class="container market-split">
     <div class="reveal">
-      <span class="eyebrow">Market opportunity</span>
-      <div class="market-big2">60<span>% of SMB breaches trace back to a known, unpatched vulnerability</span></div>
+      <span class="eyebrow">market_opportunity</span>
+      <div class="market-num">60<span>% of SMB breaches trace back to a known, unpatched vulnerability</span></div>
     </div>
-    <div class="market-rows5 reveal" data-d="2">
-      <div class="market-row6"><b>Target users</b><p>SMBs and mid-market companies without a dedicated security team.</p></div>
-      <div class="market-row6"><b>Launch markets</b><p>Nigeria, Kenya, and South Africa first — expanding to UK and US SMB markets.</p></div>
-      <div class="market-row6"><b>Revenue model</b><p>Per-asset subscription plus a tier for compliance reporting.</p></div>
-      <div class="market-row6"><b>Growth plan</b><p>Land through MSP and dev-tool partnerships, expand by asset count.</p></div>
+    <div class="market-rows reveal" data-d="2">
+      <div class="market-row"><b>Target users</b><p>SMBs and mid-market companies without a dedicated security team.</p></div>
+      <div class="market-row"><b>Launch markets</b><p>Nigeria, Kenya, and South Africa first — expanding to UK and US SMB markets.</p></div>
+      <div class="market-row"><b>Revenue model</b><p>Per-asset subscription plus a tier for compliance reporting.</p></div>
+      <div class="market-row"><b>Growth plan</b><p>Land through MSP and dev-tool partnerships, expand by asset count.</p></div>
     </div>
-  </div>
-</section>
-
-<section class="section" id="traction">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Traction &amp; MVP status</span>
-      <h2 class="h2">Early, but real</h2>
-      <p class="lead">Wardline is live and in active use across a first cohort of organizations. Real, current figures — reported honestly.</p>
-    </div>
-    <div class="stat-band2">
-      <div class="stat-cell2 reveal" data-d="1"><div class="stat-cell2__num"><span class="count" data-to="14">0</span></div><div class="stat-cell2__label">organizations live</div></div>
-      <div class="stat-cell2 reveal" data-d="2"><div class="stat-cell2__num"><span class="count" data-to="890">0</span></div><div class="stat-cell2__label">vulnerabilities found</div></div>
-      <div class="stat-cell2 reveal" data-d="3"><div class="stat-cell2__num"><span class="count" data-to="91">0</span>%</div><div class="stat-cell2__label">detection accuracy</div></div>
-      <div class="stat-cell2 reveal" data-d="4"><div class="stat-cell2__num">Live</div><div class="stat-cell2__label">MVP in active use</div></div>
-    </div>
-    <p class="banner reveal"><b>Our focus:</b> cut time-to-remediation on critical findings by up to 75%.</p>
   </div>
 </section>
 
 <section class="section" id="roadmap">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Roadmap</span>
+      <span class="eyebrow">roadmap</span>
       <h2 class="h2">What we're building next</h2>
     </div>
-    <div class="kanban">
-      <div class="reveal" data-d="1">
-        <div class="kanban-col__head">Shipped</div>
-        <div class="kanban-card"><h3>Continuous scanning engine</h3><p>Live in the MVP, checking systems around the clock.</p></div>
-        <div class="kanban-card"><h3>Risk prioritization</h3><p>Findings ranked by real exploitability.</p></div>
-      </div>
-      <div class="reveal" data-d="2">
-        <div class="kanban-col__head">In progress</div>
-        <div class="kanban-card"><h3>Plain-language remediation</h3><p>Step-by-step fixes for every finding.</p></div>
-        <div class="kanban-card"><h3>Compliance report export</h3><p>SOC 2-ready reports on demand.</p></div>
-      </div>
-      <div class="reveal" data-d="3">
-        <div class="kanban-col__head">Planned</div>
-        <div class="kanban-card"><h3>Slack &amp; ticketing integrations</h3><p>Alerts routed straight into your workflow.</p></div>
-        <div class="kanban-card"><h3>Multi-cloud coverage</h3><p>Expanding scanning to more cloud providers.</p></div>
-      </div>
+    <div class="timeline">
+      <div class="tl-row reveal" data-d="1"><span class="tl-row__q tl-row__q--done">Shipped</span><div><h3>Continuous scanning engine</h3><p>Live — checking systems around the clock.</p></div></div>
+      <div class="tl-row reveal" data-d="2"><span class="tl-row__q tl-row__q--done">Shipped</span><div><h3>Risk prioritization</h3><p>Findings ranked by real exploitability.</p></div></div>
+      <div class="tl-row reveal" data-d="3"><span class="tl-row__q tl-row__q--now">Now</span><div><h3>Plain-language remediation</h3><p>Step-by-step fixes for every finding.</p></div></div>
+      <div class="tl-row reveal" data-d="4"><span class="tl-row__q">Next</span><div><h3>Compliance report export</h3><p>SOC 2-ready reports on demand.</p></div></div>
+      <div class="tl-row reveal" data-d="1"><span class="tl-row__q">Planned</span><div><h3>Slack &amp; ticketing integrations</h3><p>Alerts routed straight into your workflow.</p></div></div>
     </div>
   </div>
 </section>
@@ -249,28 +331,28 @@
 <section class="section" id="team">
   <div class="container">
     <div class="section-head section-head--center reveal">
-      <span class="eyebrow">Team</span>
+      <span class="eyebrow">team</span>
       <h2 class="h2">Real people building Wardline</h2>
       <p class="lead" style="margin-inline:auto">A small team of security engineers and infrastructure specialists.</p>
     </div>
-    <div class="team-row7">
-      <div class="member-card2 reveal" data-d="1">
-        <div class="member-card2__ph">CN</div>
+    <div class="team-row">
+      <div class="member reveal" data-d="1">
+        <div class="member__ph">CN</div>
         <h3>Chiamaka Nnadi</h3>
         <div class="role">Founder &amp; CEO</div>
         <p>Leads Wardline's mission to make continuous security scanning accessible to teams without a security function.</p>
-        <div class="member-card2__socials">
+        <div class="member__socials">
           <a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
           <a href="#" class="li" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
           <a href="mailto:chiamaka@wardline.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
         </div>
       </div>
-      <div class="member-card2 reveal" data-d="2">
-        <div class="member-card2__ph">OE</div>
+      <div class="member reveal" data-d="2">
+        <div class="member__ph">OE</div>
         <h3>Obinna Eze</h3>
         <div class="role">Co-founder &amp; CTO</div>
         <p>Leads Wardline's detection models, exploit-modeling pipeline, and cloud infrastructure.</p>
-        <div class="member-card2__socials">
+        <div class="member__socials">
           <a href="mailto:obinna@wardline.io" class="li" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
         </div>
       </div>
@@ -280,20 +362,15 @@
 
 <section class="section section--flush" id="demo">
   <div class="container">
-    <div class="cta-band3 reveal">
-      <div>
-        <span class="eyebrow">Get started</span>
-        <h2 class="h2" style="margin-top:14px">See Wardline scan your own systems in 20 minutes</h2>
-        <p class="lead">Book a walkthrough — no commitment. We'll run a live scan on a sample environment.</p>
-        <form class="cta-band3__form" id="demoForm" novalidate>
-          <input id="email" type="email" placeholder="you@company.com" required />
-          <button type="submit" class="btn btn--red">Get started</button>
-        </form>
-        <p class="cta-band3__note">By submitting you agree to our <a href="privacy.html" style="color:var(--text-soft)">privacy policy</a>.</p>
-      </div>
-      <div class="cta-band3__badge">
-        <svg viewBox="0 0 24 24" width="72" height="72" fill="currentColor"><path d="M12 2.5l8.5 3.4v6.1c0 5.4-3.6 9-8.5 10.5-4.9-1.5-8.5-5.1-8.5-10.5V5.9z"/><path d="M8.7 12.2l2.2 2.2 4.4-4.4" stroke="#17090B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-      </div>
+    <div class="cta-band reveal">
+      <span class="eyebrow">get_started</span>
+      <h2 class="h2" style="margin-top:14px">See Wardline scan your own systems in 20 minutes</h2>
+      <p class="lead" style="margin-inline:auto">Book a walkthrough — no commitment. We'll run a live scan on a sample environment.</p>
+      <form class="cta-band__form" id="demoForm" novalidate>
+        <input id="email" type="email" placeholder="you@company.com" required />
+        <button type="submit" class="btn btn--dark">Get started</button>
+      </form>
+      <p class="cta-band__note">No credit card · Live product</p>
     </div>
   </div>
 </section>
@@ -301,9 +378,6 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__top">
-      <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="privacy.html#data">Data protection</a></li><li><a href="#demo">Contact</a></li></ul></div>
-      <div><h4>Product</h4><ul><li><a href="#features">Features</a></li><li><a href="#how">How it works</a></li><li><a href="#ai">AI technology</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="#team">Team</a></li><li><a href="#market">Market</a></li><li><a href="#demo">Get started</a></li><li><a href="login.html">Log in</a></li></ul></div>
       <div>
         <a href="index.html" class="brand">
           <span class="brand__mark"><img src="assets/logo-mark.png?v=1" alt="Wardline logo"></span>
@@ -311,19 +385,24 @@
         </a>
         <p class="footer__about">AI vulnerability scanning — find the hole before someone else does.</p>
       </div>
+      <div class="footer__linkgrid">
+        <div><h4>product</h4><ul><li><a href="#features">Features</a></li><li><a href="#how">How it works</a></li><li><a href="#ai">AI technology</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
+        <div><h4>company</h4><ul><li><a href="#team">Team</a></li><li><a href="#market">Market</a></li><li><a href="#demo">Get started</a></li><li><a href="login.html">Log in</a></li></ul></div>
+        <div><h4>legal</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li><li><a href="privacy.html#data">Data protection</a></li><li><a href="#demo">Contact</a></li></ul></div>
+      </div>
     </div>
     <p class="footer__disclaimer">Wardline helps teams find and prioritize vulnerabilities. It does not guarantee prevention of every breach, and remediation steps should always be reviewed before being applied to production systems.</p>
     <div class="footer__bottom">
+      <span>&copy; 2026 Wardline Labs Ltd.</span>
       <div class="footer__socials">
         <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.3H4.8V19h2.3V9.3zM5.95 5.4a1.35 1.35 0 10-.05 2.7 1.35 1.35 0 00.05-2.7zM19.2 19h-2.3v-4.7c0-1.2-.43-1.98-1.5-1.98-.82 0-1.3.55-1.52 1.08-.08.19-.1.45-.1.72V19h-2.3s.03-8.02 0-8.85h2.3v1.25c.3-.47.85-1.14 2.08-1.14 1.52 0 2.66.99 2.66 3.13V19z"/></svg></a>
         <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 3h3l-7 8 8 10h-6l-5-6-5 6H3l7.5-9L3 3h6l4.5 5.5z"/></svg></a>
         <a href="#" aria-label="Email"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.8"/></svg></a>
       </div>
-      <span>© 2026 Wardline Labs Ltd. All rights reserved.</span>
     </div>
   </div>
 </footer>
 
-<script src="assets/app.js?v=1"></script>
+<script src="assets/app.js?v=2"></script>
 </body>
 </html>
