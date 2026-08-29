@@ -74,58 +74,49 @@
 
 <section class="section" id="capabilities">
   <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">capabilities</span>
-      <h2 class="h2">What Wardline actually shows you</h2>
-      <p class="lead">Three views that make your security posture concrete and actionable.</p>
-    </div>
-    <div class="cap-grid">
-      <div class="cap-card reveal" data-d="1">
-        <div class="mk mk--scan">
-          <div class="mk__bar"><span>SCAN RESULTS</span><span class="mk__tag">acme-corp.prod</span></div>
-          <div class="mk__row"><span class="mk__sev mk__sev--crit">CRIT</span><span>Open admin port exposed to public internet</span></div>
-          <div class="mk__row"><span class="mk__sev mk__sev--high">HIGH</span><span>Outdated dependency: express@4.16.1</span></div>
-          <div class="mk__row"><span class="mk__sev mk__sev--med">MED</span><span>Weak TLS cipher suite on 3 endpoints</span></div>
-          <div class="mk__row"><span class="mk__sev mk__sev--low">LOW</span><span>Debug mode enabled in staging</span></div>
-          <div class="mk__row"><span class="mk__sev mk__sev--pass">PASS</span><span>Database access controls</span></div>
-          <div class="mk__foot">4 findings · 1 critical</div>
-        </div>
-        <h3>Live scan results</h3>
-        <p>Every finding listed with severity, affected system, and context — not just a CVE number.</p>
+    <div class="scan-split reveal">
+      <div class="scan-split__art" aria-hidden="true">
+        <svg viewBox="0 0 320 360" class="scan-art" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="160" cy="182" r="130" stroke="#D4D4D4" stroke-width="0.8" stroke-dasharray="3 5"/>
+          <circle cx="160" cy="182" r="80" stroke="#D4D4D4" stroke-width="0.8" stroke-dasharray="2 4"/>
+          <rect x="128" y="162" width="64" height="40" rx="5" stroke="#1A1A1A" stroke-width="1.5"/>
+          <text x="160" y="185" font-family="'IBM Plex Mono', monospace" font-size="8" fill="#555555" text-anchor="middle" dominant-baseline="middle">HOST</text>
+          <circle cx="52" cy="64" r="20" stroke="#DC2626" stroke-width="1.5"/>
+          <line x1="70" y1="76" x2="130" y2="165" stroke="#DC2626" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/>
+          <text x="52" y="64" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">CRIT</text>
+          <circle cx="272" cy="72" r="17" stroke="#EA580C" stroke-width="1.5"/>
+          <line x1="256" y1="84" x2="192" y2="165" stroke="#EA580C" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/>
+          <text x="272" y="72" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#EA580C" text-anchor="middle" dominant-baseline="middle">HIGH</text>
+          <circle cx="44" cy="300" r="15" stroke="#CA8A04" stroke-width="1.5"/>
+          <line x1="58" y1="291" x2="130" y2="199" stroke="#CA8A04" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/>
+          <text x="44" y="300" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#CA8A04" text-anchor="middle" dominant-baseline="middle">MED</text>
+          <circle cx="278" cy="296" r="13" stroke="#ABABAB" stroke-width="1.5"/>
+          <line x1="265" y1="287" x2="192" y2="199" stroke="#ABABAB" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/>
+          <text x="278" y="296" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#8A8A8A" text-anchor="middle" dominant-baseline="middle">LOW</text>
+        </svg>
       </div>
-
-      <div class="cap-card reveal" data-d="2">
-        <div class="mk mk--risk">
-          <div class="mk__bar"><span>RISK POSTURE</span><span class="mk__tag">last 30 days</span></div>
-          <div class="mk__score-row">
-            <div class="mk__score">B+</div>
-            <div class="mk__score-detail">Risk Score<br><small>Improving ↑</small></div>
+      <div class="scan-split__text">
+        <span class="eyebrow">what wardline finds</span>
+        <h2 class="h2">The vulnerabilities attackers look for first.</h2>
+        <p class="lead">Wardline maps your attack surface and surfaces findings ranked by real-world exploitability — not just a number from a scan tool.</p>
+        <div class="scan-cats">
+          <div class="scan-cat">
+            <span class="scan-sev sev--crit">CRIT</span>
+            <span class="scan-cat__desc">Exposed admin ports · Public RDP/SSH · Leaked credentials in source</span>
           </div>
-          <div class="mk__dist">
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--crit">CRIT</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--crit" data-w="15%"></div></div><span>2</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--high">HIGH</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--high" data-w="30%"></div></div><span>4</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--med">MED</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--med" data-w="55%"></div></div><span>8</span></div>
-            <div class="mk__dist-row"><span class="mk__sev mk__sev--low">LOW</span><div class="mk__bar-track"><div class="mk__bar-fill mk__bar-fill--low" data-w="80%"></div></div><span>12</span></div>
+          <div class="scan-cat">
+            <span class="scan-sev sev--high">HIGH</span>
+            <span class="scan-cat__desc">Unpatched CVEs · Misconfigured cloud storage · Weak authentication</span>
+          </div>
+          <div class="scan-cat">
+            <span class="scan-sev sev--med">MED</span>
+            <span class="scan-cat__desc">Weak TLS ciphers · Debug endpoints · Missing HTTP security headers</span>
+          </div>
+          <div class="scan-cat">
+            <span class="scan-sev sev--low">LOW</span>
+            <span class="scan-cat__desc">Verbose errors · Unused open ports · Unrotated API keys</span>
           </div>
         </div>
-        <h3>Risk posture at a glance</h3>
-        <p>A single score and severity breakdown that tells your team exactly where you stand.</p>
-      </div>
-
-      <div class="cap-card reveal" data-d="3">
-        <div class="mk mk--fix">
-          <div class="mk__bar"><span>FIX GUIDANCE</span><span class="mk__tag mk__tag--crit">CRITICAL</span></div>
-          <div class="mk__fix-title">Open admin port exposed to public internet</div>
-          <div class="mk__fix-meta">Port 8080 · 3 affected hosts · CVE-2024-1234</div>
-          <div class="mk__steps">
-            <div class="mk__step"><span class="mk__step-n">1</span>Add IP allowlist to admin endpoint</div>
-            <div class="mk__step"><span class="mk__step-n">2</span>Enable MFA on admin login</div>
-            <div class="mk__step"><span class="mk__step-n">3</span>Deploy WAF rule to block public access</div>
-          </div>
-          <div class="mk__fix-action">Apply fix →</div>
-        </div>
-        <h3>Plain-language fixes</h3>
-        <p>Every finding comes with step-by-step remediation your team can follow — no security degree required.</p>
       </div>
     </div>
   </div>
