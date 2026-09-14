@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 
 interface HeroProps {
   onOpenModal: () => void;
@@ -62,8 +61,8 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         {/* Subtitle - Reduced font size and margins to save vertical space */}
         <motion.p 
           className="text-sm md:text-base lg:text-lg text-gray-300 max-w-xl mt-8 md:mt-12 font-medium leading-relaxed border-l-4 border-brand-accent pl-4 md:pl-6 self-start md:ml-12"
-          initial={{ opacity: 0, opacity: 0 }}
-          animate={{ opacity: 1, opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
           We turn heart rate, respiration, temperature, and movement into one unified AI observation, giving nurses the critical minutes they need before a crisis happens.
