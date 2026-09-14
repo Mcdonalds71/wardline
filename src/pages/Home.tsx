@@ -17,7 +17,7 @@ const Home: React.FC<HomeProps> = ({ onOpenModal }) => {
       {/* 2. Built for - Beautiful Image Background with Blur */}
       <section className="relative py-20 border-y border-gray-200 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hospital_bg.jpg" alt="Hospital Ward" className="w-full h-full object-cover" />
+          <img src={`\${import.meta.env.BASE_URL}images/hospital_bg.jpg`} alt="Hospital Ward" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">

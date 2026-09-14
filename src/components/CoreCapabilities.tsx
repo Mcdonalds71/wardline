@@ -76,7 +76,7 @@ const CoreCapabilities: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="absolute inset-0 bg-brand-dark/10 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
-            <img src="/images/nurse_dashboard.jpg" alt="Nurse observing patient dashboard" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <img src={`\${import.meta.env.BASE_URL}images/nurse_dashboard.jpg`} alt="Nurse observing patient dashboard" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </motion.div>
           <motion.div 
             className="aspect-[4/5] rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex items-center justify-center p-0 mt-12 bg-cover bg-center group relative"
@@ -86,7 +86,7 @@ const CoreCapabilities: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="absolute inset-0 bg-brand-dark/10 group-hover:bg-transparent transition-colors z-10 duration-500"></div>
-            <img src="/images/wardline_sensor.jpg" alt="Wardline sensor in hospital room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <img src={`\${import.meta.env.BASE_URL}images/wardline_sensor.jpg`} alt="Wardline sensor in hospital room" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
           </motion.div>
         </div>
       </div>

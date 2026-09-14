@@ -39,7 +39,7 @@ const About: React.FC = () => {
             className="relative rounded-3xl overflow-hidden shadow-2xl h-[500px]"
           >
             <div className="absolute inset-0 bg-brand-dark/20 z-10"></div>
-            <img src="/images/hospital_bg.jpg" alt="Hospital Ward" className="w-full h-full object-cover" />
+            <img src={`\${import.meta.env.BASE_URL}images/hospital_bg.jpg`} alt="Hospital Ward" className="w-full h-full object-cover" />
             
             {/* Overlay Stat Card */}
             <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl z-20 shadow-lg border border-white/50">

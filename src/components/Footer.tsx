@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-gray-800 pb-16">
         <div className="md:col-span-4">
           <div className="mb-6 -ml-4">
-            <img src="/images/logo_extracted.png" alt="Wardline Logo" className="w-48 h-auto" />
+            <img src={`\${import.meta.env.BASE_URL}images/logo_extracted.png`} alt="Wardline Logo" className="w-48 h-auto" />
           </div>
           <p className="text-gray-500 mb-6 max-w-sm">
             Ambient clinical intelligence for African healthcare. Built in Nigeria, expanding across Africa and Europe.

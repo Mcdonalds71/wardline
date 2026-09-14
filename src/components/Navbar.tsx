@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Link to="/" className="flex items-center -ml-4">
-            <img src="/images/logo_extracted.png" alt="Wardline Logo" className="w-40 md:w-56 h-auto drop-shadow-md" />
+            <img src={`\${import.meta.env.BASE_URL}images/logo_extracted.png`} alt="Wardline Logo" className="w-40 md:w-56 h-auto drop-shadow-md" />
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm font-bold text-gray-300">
             <Link to="/#platform" className="hover:text-white transition">Platform</Link>
