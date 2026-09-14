@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           playsInline 
           className="w-full h-full object-cover"
         >
-          <source src={`\${import.meta.env.BASE_URL}videos/hero_video.mp4`} type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero_video.mp4`} type="video/mp4" />
         </video>
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-black/60"></div>
