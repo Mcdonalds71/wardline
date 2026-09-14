@@ -6,19 +6,19 @@ const TeamSection: React.FC = () => {
       name: "Dr. Amaka Balogun",
       role: "Chief Medical Officer",
       credibility: "Ex-Clinical Director, LUTH Intensive Care",
-      image: "/images/amaka.jpg"
+      image: `${import.meta.env.BASE_URL}images/amaka.jpg`
     },
     {
       name: "Chinedu Okafor",
       role: "Lead AI Engineer",
       credibility: "Ex-Microsoft Azure ML, HealthTech Specialist",
-      image: "/images/chinedu.jpg"
+      image: `${import.meta.env.BASE_URL}images/chinedu.jpg`
     },
     {
       name: "Ngozi Adebayo",
       role: "Head of Operations",
       credibility: "Scaled Evercare operations across West Africa",
-      image: "/images/ngozi.jpg"
+      image: `${import.meta.env.BASE_URL}images/ngozi.jpg`
     }
   ];
 
