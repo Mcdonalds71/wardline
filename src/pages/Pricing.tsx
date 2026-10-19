@@ -14,7 +14,7 @@ const Pricing: React.FC = () => {
         <motion.div className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <h3 className="text-2xl font-bold mb-2">Clinic Starter</h3>
           <p className="text-gray-500 mb-6 font-medium">For small clinics and private practices</p>
-          <div className="mb-6"><span className="text-5xl font-black text-brand-dark">$499</span><span className="text-gray-500 font-medium">/mo</span></div>
+          <div className="mb-6"><span className="text-5xl font-black text-brand-dark">$100</span><span className="text-gray-500 font-medium">/mo</span></div>
           <ul className="mb-8 space-y-4 text-gray-700 font-medium flex-grow">
             <li className="flex items-center gap-3"><span className="text-brand-accent">✓</span> 500 patient beds monitored</li>
             <li className="flex items-center gap-3"><span className="text-brand-accent">✓</span> $1.50 per additional bed</li>
@@ -29,7 +29,7 @@ const Pricing: React.FC = () => {
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Most Popular</div>
           <h3 className="text-2xl font-bold mb-2">Hospital Growth</h3>
           <p className="text-gray-400 mb-6 font-medium">For mid-market hospitals and regional networks</p>
-          <div className="mb-6"><span className="text-5xl font-black">$1,499</span><span className="text-gray-400 font-medium">/mo</span></div>
+          <div className="mb-6"><span className="text-5xl font-black">$399</span><span className="text-gray-400 font-medium">/mo</span></div>
           <ul className="mb-8 space-y-4 text-gray-300 font-medium flex-grow">
             <li className="flex items-center gap-3"><span className="text-brand-accent">✓</span> 2,500 patient beds monitored</li>
             <li className="flex items-center gap-3"><span className="text-brand-accent">✓</span> $0.80 per additional bed</li>
